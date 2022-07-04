@@ -1,0 +1,104 @@
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.buttons-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.buttons-button {
+  font-family: inherit;
+  @include font(500, 16px, 26px, 00.03em);
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
+  color: $portfolio-main-color;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:focus {
+    color: $button-tex-color;
+    background-color: $main-second-color;
+    box-shadow: $card-shadow;
+    border-radius: 4px;
+    border-color: transparent;
+  }
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.portfolio > .portfolio__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.portfolio__link {
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:focus {
+    box-shadow: $card-shadow;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+}
+
+.portfolio__link:hover .portfolio-overlay__text,
+.portfolio__link:focus .portfolio-overlay__textt {
+  transform: translateY(0);
+}
+
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-overlay__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: inherit;
+  @include font(400, 18px, 28px, 00.03em);
+  color: $white-color;
+  background-color: #2195f3f6;
+  transform: translatey(100%);
+  /*transition: transform 250ms ease;*/
+  padding: 64px 24px;
+  transition-property: transform, box-shadow;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
+
+.portfolio__content {
+  padding: 20px 24px;
+  border: 1px solid $white-color;
+  border-top: none;
+}
+
+.portfolio__title {
+  @include font(700, 18px, 36px, 00.06em);
+  margin-bottom: 4px;
+  color: $portfolio-main-color;
+}
+
+.portfolio__text {
+  @include font(400, 16px, 30px, 00.03em);
+  color: $portfolio-text-color;
+}

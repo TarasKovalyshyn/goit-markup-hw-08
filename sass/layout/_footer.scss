@@ -1,0 +1,126 @@
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+.footer {
+  background-color: #2f303a;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.footer-webstudio {
+  font-family: "Raleway";
+  @include font(700, 26px, 31px, 00.03em);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $main-second-color;
+}
+
+.footer-logo {
+  color: $white-color;
+}
+
+.footer-address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-link {
+  @include font(400, 14px, 24px, 00.03em);
+  color: $white-color;
+}
+
+.footer-mail,
+.footer-tel {
+  @include font(400, 14px, 24px, 00.03em);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-soc-text {
+  font-family: inherit;
+  font-style: normal;
+  @include font(700, 14px, 16px, 00.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer__link-color {
+  fill: $icons-color;
+  background: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 1);
+  &:hover,
+  &:focus {
+    background-color: $main-second-color;
+  }
+}
+
+.footer-form-text {
+  font-family: inherit;
+  @include font(700, 14px, 16px, 00.03em);
+  text-transform: uppercase;
+  color: $white-color;
+}
+.footer-form-btn {
+  padding: 10px 30px 10px 29px;
+  margin-left: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color, color, box-shadow, fill;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:hover {
+    background-color: $button-tex-color;
+    color: $hover-focus_color;
+    fill: $hover-focus_color;
+  }
+}
+
+.footer-imput {
+  width: 360px;
+  height: 50px;
+  padding: 15px 0 15px 16px;
+  margin-top: 20px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: #2f303a;
+  color: $white-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition-property: border;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:focus {
+    border: 1px solid $main-second-color;
+    outline: none;
+  }
+  &::placeholder {
+    display: inline-block;
+    font-family: inherit;
+    @include font (400, 16px, 20px, 00.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-icon-form {
+  margin-left: 10px;
+}
+.footer-form {
+  margin-left: 90px;
+}
+.footer-div-address {
+  margin-right: 50px;
+}

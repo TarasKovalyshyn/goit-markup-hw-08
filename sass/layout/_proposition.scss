@@ -1,0 +1,52 @@
+.proposition {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.proposition-list {
+  display: flex;
+  box-sizing: border-box;
+}
+.proposition-item:not(:last-child) {
+  margin-right: 30px;
+}
+.proposition-item {
+  text-align: left;
+  width: 270px;
+}
+.proposition-item::before {
+  display: block;
+  content: " ";
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.proposition-item:nth-child(1)::before {
+  background-image: url(../images/icons.svg/antenna.svg);
+}
+.proposition-item:nth-child(2)::before {
+  background-image: url(../images/icons.svg/clock.svg);
+}
+.proposition-item:nth-child(3)::before {
+  background-image: url(../images/icons.svg/diagram.svg);
+}
+.proposition-item:nth-child(4)::before {
+  background-image: url(../images/icons.svg/astronaut.svg);
+}
+
+.proposition-title {
+  @include font(700, 14px, 16px, 00.03em);
+  text-transform: uppercase;
+  color: $main-color;
+  margin-bottom: 10px;
+}
+
+.proposition-text {
+  @include font(400, 14px, 24px, 00.03em);
+  color: $portfolio-text-color;
+  box-sizing: border-box;
+}

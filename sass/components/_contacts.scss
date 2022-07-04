@@ -1,0 +1,34 @@
+
+  .contact {
+    @include align-list;
+    margin-left: auto;
+  }
+  .contact__item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    @include align-list;
+    justify-content: center;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  }
+  .contact__icon {
+    @include font (500, 14px, 16px, 00.02em);
+    font-family: inherit;
+    @include align-list;
+    color: $mail-color;
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    &:focus,
+    &:hover {
+    color: $main-second-color;
+  }
+  
+  }
+  .icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }

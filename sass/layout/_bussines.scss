@@ -1,0 +1,41 @@
+.bussines {
+  background: #2f303a;
+  text-align: center;
+  padding: 200px 0;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/icons.svg/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bussines-title {
+  @include font (900, 44px, 60px, 00.06em);
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;  
+  color: $white-color;
+}
+
+.bussines-button {
+  padding: 10px 32px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $hover-focus_color;
+  }
+}
+
