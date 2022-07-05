@@ -1,29 +1,30 @@
 .doing {
+  @media screen and (max-width:1199px) {
+     display: none;
+  }
     padding-bottom: 94px;
   }
-  .doing-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+  .doing__title {
+    @include font (700, 36px, 42px, 00.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
-  
     color: $main-color;
   }
   
-  .doing-list {
+  .doing__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
-  .doing-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .doing-item {
+  // .doing__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+  .doing__item {
     position: relative;
     display: block;
   }
   
-  .doing-thumb {
+  .doing__thumb {
     height: 70px;
     width: 100%;
     position: absolute;
@@ -34,9 +35,9 @@
     padding: 27px 0;
     background: rgba(47, 48, 58, 0.8);
   }
-  .thumb-text {
-    font-family: inherit;
+  .thumb__text { 
     @include font (700, 14px, 16px, 00.03em);
+    font-family: inherit;
     text-align: center;
     text-transform: uppercase;
     color:$white-color;

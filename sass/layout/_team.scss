@@ -15,12 +15,8 @@
   .team__list {
    display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    gap: 30px; 
     text-align: center;
-    
-    // margin-left: -30px;
-    // margin-bottom: -30px;
   }
   .team__item {
     box-sizing: border-box;
@@ -28,15 +24,12 @@
     box-shadow: $card-shadow;
     border-radius: 0px 0px 4px 4px;
     @media screen and (min-width: 768px) {
-      width: calc(100% / 2 - 30px);
+      width: calc((100% - 30px) / 2);
       @media screen and (min-width: 1200px) {
-        width: calc(100% / 4 - 30px);
+        width: calc((100% - 90px) / 4);
       }
       
     }
-    // flex-basis: calc(100% / 1 - 30px);
-    // margin-left: 30px;
-  //  margin-bottom: 30px;
   }
  
   // .team__item--margin:not(:last-child) {
