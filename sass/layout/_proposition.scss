@@ -1,6 +1,11 @@
 .proposition {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
+  
+  
+ @include desktop{
+  padding-top: 94px;
+  padding-bottom: 94px;
+ }
 }
 
 .proposition__list {
@@ -16,10 +21,10 @@
 // }
 .proposition__item {
   text-align: left;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 60px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+@include desktop {
     width: calc((100% - 90px) / 4);
   }
   // width: 270px;

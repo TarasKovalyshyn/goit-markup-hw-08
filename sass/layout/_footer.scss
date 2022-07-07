@@ -1,27 +1,34 @@
-.footer-wrap {
-  
-  @media screen and (max-width: 767px){
-    align-items: center;
-    text-align: center;
-  }
-
- @media screen and (min-width: 768px){
-align-items: baseline;
-
- }
- @media screen and (min-width: 1200px){
-  display: flex;
-  align-items: baseline;
-justify-content: center;
- }
-}
 .footer {
   background-color: #2f303a;
-  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 60px;
+}
 
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  // @media screen and (max-width: 767px) {
+  //   align-items: center;
+  //   text-align: center;
+  // }
 
+ @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    
+  }
+  @include desktop{
+    text-align: left;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   align-items: baseline;
+  //   justify-content: center;
+  // }
 }
 
 
@@ -39,13 +46,16 @@ justify-content: center;
   color: $white-color;
 }
 
-.footer-address {
+.footer__address {
   font-style: normal;
   margin-top: 20px;
 }
 
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
+.footer__item:not(:last-child) {
+  margin-bottom: 8px;
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 .footer-link {
   @include font(400, 14px, 24px, 00.03em);
@@ -58,13 +68,18 @@ justify-content: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address:not(:last-child) {
-  margin-bottom: 9px;
-}
-.footer-soc{
-  @media screen and (min-width: 1200px){
-    margin-left: 70px;
-    margin-right: 90px;
+// .address:not(:last-child) {
+//   margin-bottom: 8px;
+// }
+.footer-soc {
+  margin-top: 60px ;
+  @include tablet{
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-right: auto;
   }
 }
 .footer-soc-text {
@@ -86,34 +101,23 @@ justify-content: center;
   }
 }
 
+.footer-form{
+ margin-top: 60px ;
+}
 .footer-form-text {
   font-family: inherit;
   @include font(700, 14px, 16px, 00.03em);
   text-transform: uppercase;
   color: $white-color;
-}
-.footer-form-btn {
-  padding: 10px 30px 10px 29px;
-  margin-left: 12px;
- display: inline-flex;
-  transition-property: background-color, color, box-shadow, fill;
-  transition-duration: $duration;
-  transition-timing-function: $timing-function;
-  &:hover,
-  &:hover {
-    background-color: $button-tex-color;
-    color: $hover-focus_color;
-    fill: $hover-focus_color;
-  }
+  margin-bottom: 20px;
 }
 
 
 .footer-imput {
- 
- width: 100%;
+  margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   padding: 15px 0 15px 16px;
-  margin-top: 20px;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
@@ -130,26 +134,32 @@ justify-content: center;
   &::placeholder {
     display: inline-block;
     font-family: inherit;
-    @include font (400, 16px, 20px, 00.03em);
+    @include font(400, 16px, 20px, 00.03em);
     color: rgba(255, 255, 255, 0.6);
   }
-  @media screen and (min-width: 1200px){
+ @include desktop {
     width: 360px;
   }
 }
 
-.footer-icon-form {
-  margin-left: 10px;
-}
 
 
-
-.footer-div-address, .footer-soc{
-  @media screen and (min-width: 768px){
-display: inline-block;
-align-items: baseline;
-
+.footer-form-btn {
+  padding: 10px 29px 10px 28px;
+  margin-left: 12px;
+  display: inline-flex;
+  transition-property: background-color, color, box-shadow, fill;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:hover {
+    background-color: $button-tex-color;
+    color: $hover-focus_color;
+    fill: $hover-focus_color;
   }
 }
 
 
+.footer-icon-form {
+  margin-left: 10px;
+}

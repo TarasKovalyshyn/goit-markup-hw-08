@@ -10,6 +10,9 @@
     text-align: center; 
     color: $main-color;
     margin-bottom: 50px;
+    @include desktop {
+      @include font (700, 36px, 42px, 00.03em)
+    }
   }
   
   .customers__list{
@@ -22,10 +25,10 @@
   .customers__item {
     height: 90px;
     width: calc((100% - 30px) / 2);
-   @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 60px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 150px) / 6);
   }
   }
