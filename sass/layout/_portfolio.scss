@@ -51,6 +51,7 @@
 .portfolio-overlay__text {
   position: absolute;
   top: 0;
+  height: 100%;
   left: 0;
   font-family: inherit;
   @include font(400, 18px, 28px, 00.03em);

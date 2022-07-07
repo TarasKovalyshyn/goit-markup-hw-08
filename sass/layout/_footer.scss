@@ -1,14 +1,30 @@
 .footer-wrap {
+  
+  @media screen and (max-width: 767px){
+    align-items: center;
+    text-align: center;
+  }
+
+ @media screen and (min-width: 768px){
+align-items: baseline;
+
+ }
+ @media screen and (min-width: 1200px){
   display: flex;
   align-items: baseline;
+justify-content: center;
+width: calc(100% - 160px) / 3;
+ }
 }
 .footer {
   background-color: #2f303a;
   box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
+
+
 }
+
 
 .footer-webstudio {
   font-family: "Raleway";
@@ -46,7 +62,12 @@
 .address:not(:last-child) {
   margin-bottom: 9px;
 }
-
+.footer-soc{
+  @media screen and (min-width: 1200px){
+    margin-left: 70px;
+    margin-right: 90px;
+  }
+}
 .footer-soc-text {
   font-family: inherit;
   font-style: normal;
@@ -75,9 +96,7 @@
 .footer-form-btn {
   padding: 10px 30px 10px 29px;
   margin-left: 12px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+ display: inline-flex;
   transition-property: background-color, color, box-shadow, fill;
   transition-duration: $duration;
   transition-timing-function: $timing-function;
@@ -89,8 +108,10 @@
   }
 }
 
+
 .footer-imput {
-  width: 360px;
+ 
+ width: 100%;
   height: 50px;
   padding: 15px 0 15px 16px;
   margin-top: 20px;
@@ -113,14 +134,23 @@
     @include font (400, 16px, 20px, 00.03em);
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 1200px){
+    width: 360px;
+  }
 }
 
 .footer-icon-form {
   margin-left: 10px;
 }
-.footer-form {
-  margin-left: 90px;
+
+
+
+.footer-div-address, .footer-soc{
+  @media screen and (min-width: 768px){
+display: inline-block;
+align-items: baseline;
+
+  }
 }
-.footer-div-address {
-  margin-right: 50px;
-}
+
+
