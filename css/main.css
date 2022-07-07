@@ -631,7 +631,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: calc(100% - 160px)/3;
   }
 }
 
