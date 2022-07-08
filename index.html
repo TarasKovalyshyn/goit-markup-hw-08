@@ -125,34 +125,59 @@
           <h2 class="doing__title">Чем мы занимаемся</h2>
           <ul class="doing__list">
             <li class="doing__item">
-              <img
-                src="./images/img.jpg"
-                alt="typing on keyboard"
-                width="360"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing-1-desk.jpg    1x,
+                    ./images/doing-1-desk-x2.jpg 2x
+                  "
+                  media="min-width: 1200px"
+                />
+
+                <img
+                  src="./images/doing-1-desk.jpg"
+                  alt="typing on keyboard"
+                  width="370"
+                />
+              </picture>
               <div class="doing__thumb">
                 <p class="thumb__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="doing__item">
-              <img
-                src="./images/img(1).jpg"
-                alt="serf the internet"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing-2-desk.jpg    1x,
+                    ./images/doing-2-desk-x2.jpg 2x
+                  "
+                  media="min-width: 1200px"
+                />
+                <img
+                  src="./images/doing-2-desk.jpg"
+                  alt="serf the internet"
+                  width="370"
+                />
+              </picture>
               <div class="doing__thumb">
                 <p class="thumb__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="doing__item">
-              <img
-                src="./images/img(2).jpg"
-                alt="painting"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing-3-desk.jpg    1x,
+                    ./images/doing-3-desk-x2.jpg 2x
+                  "
+                  media="min-width: 1200px"
+                />
+                <img
+                  src="./images/doing-3-desk.jpg"
+                  alt="serf the internet"
+                  width="370"
+                />
+              </picture>
               <div class="doing__thumb">
                 <p class="thumb__text">Дизайнерские решения</p>
               </div>
@@ -166,12 +191,35 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/imgProductDesigner.jpg"
-                alt="Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-1-desk.jpg    1x,
+                    ./images/team-1-desk-x2.jpg 2x
+                  "
+                  media="min-width: 1200px"
+                />
+                <source
+                  srcset="
+                    ./images/team-1-tab.jpg    1x,
+                    ./images/team-1-tab-x2.jpg 2x
+                  "
+                  media="min-width: 760px"
+                />
+                <source
+                  srcset="
+                    ./images/team-1-mob.jpg    1x,
+                    ./images/team-1-mob-x2.jpg 2x
+                  "
+                  media="min-width: 320px"
+                />
+                <img
+                  src="./images/team-1-desk.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-card">
                 <h3 class="team-card__title">Игорь Демьяненко</h3>
                 <p class="team-card__text">Product Designer</p>
@@ -217,12 +265,32 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/imgFrontendDeveloper.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-2-desk.jpg    1x,
+                    ./images/team-2-desk-x2.jpg 2x
+                  "
+                  media="min-width: 1200px" />
+                <source
+                  srcset="
+                    ./images/team-2-tab.jpg    1x,
+                    ./images/team-2-tab-x2.jpg 2x
+                  "
+                  media="min-width: 760px" />
+                <source
+                  srcset="
+                    ./images/team-2-mob.jpg    1x,
+                    ./images/team-2-mob-x2.jpg 2x
+                  "
+                  media="min-width: 320px" />
+
+                <img
+                  src="./images/team-2-desk.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+              /></picture>
+
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Репина</h3>
                 <p class="team-card__text">Frontend Developer</p>
@@ -268,12 +336,35 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/imgMarketing.jpg"
-                alt="Marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-3-desk.jpg    1x,
+                    ./images/team-3-desk-x2.jpg 2x
+                  "
+                  media="min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/team-3-tab.jpg    1x,
+                    ./images/team-3-tab-x2.jpg 2x
+                  "
+                  media="min-width: 760px"
+                />
+                <source
+                  srcset="
+                    ./images/team-3-mob.jpg    1x,
+                    ./images/team-3-mob-x2.jpg 2x
+                  "
+                  media="min-width: 320px"
+                />
+                <img
+                  src="./images/team-3-desk.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                />
+              </picture>
+             
               <div class="team-card">
                 <h3 class="team-card__title">Николай Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
@@ -330,6 +421,18 @@
                ./images/team-4-tab.jpg 1x
                 ./images/team-4-tab-x2.jpg 2x"
                   media="min-width: 760px"
+                />
+                <source
+                  srcset="
+                ./images/team-4-mob.jpg 1x
+                ./images/team-4-mob-x2.jpg 2x
+                "
+                  media="min-width: 320px"
+                />
+                <img
+                  src="./images/team-4-desk.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270px"
                 />
               </picture>
               <!-- <img
@@ -539,7 +642,7 @@
         </div>
       </div>
     </footer>
-    <!-- 
+    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button" data-modal-close>
@@ -620,23 +723,7 @@
           </div>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-<!-- <picture>
-  <source
-    srcset="./images/team_1_desk.jpg 1x, ./images/team_1_desk_x2.jpg 2x"
-    media="(min-width: 1200px)"
-  />
-  <source
-    srcset="./images/team_1_tab.jpg 1x, ./images/team_1_tab_x2.jpg 2x"
-    media="(min-width: 768px)"
-  />
-  <source
-    srcset="./images/team_1_mob.jpg 1x, ./images/team_1_mob_x2.jpg 2x"
-    media="(min-width: 320px)"
-  />
-  <img src="./images/team_1_desk.jpg" alt="Игорь Демьяненко" width="270" />
-</picture> -->

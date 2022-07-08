@@ -1,9 +1,11 @@
 .team {
   background-color: #f5f4fa;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
   padding-bottom: 60px;
   padding-top: 60px;
+  @include desktop{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__title {
   @include font(700, 28px, 33px, 00.03em);
@@ -14,10 +16,16 @@
 
 .team__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
   text-align: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
+
 .team__item {
   box-sizing: border-box;
   background: #ffffff;
