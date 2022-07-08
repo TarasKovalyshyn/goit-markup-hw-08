@@ -74,7 +74,11 @@
       <section class="bussines">
         <div class="container">
           <h1 class="bussines-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="main__buttom bussines-button" data-modal-open>
+          <button
+            type="button"
+            class="main__buttom bussines-button"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -314,12 +318,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                ./images/team-4-desk.jpg 1x
+                ./images/team-4-desk-x2.jpg 2x"
+                  media="min-width: 1200px"
+                />
+                <source
+                  srcset="
+               ./images/team-4-tab.jpg 1x
+                ./images/team-4-tab-x2.jpg 2x"
+                  media="min-width: 760px"
+                />
+              </picture>
+              <!-- <img
                 src="./images/imgUIDesigner.jpg"
                 alt="UI Designer"
                 width="270"
                 height="260"
-              />
+              /> -->
               <div class="team-card">
                 <h3 class="team-card__title">Михаил Ермаков</h3>
                 <p class="team-card__text">UI Designer</p>
@@ -429,7 +447,7 @@
       </section>
     </main>
 
-   <footer class="footer">
+    <footer class="footer">
       <div class="container footer-wrap">
         <div class="footer-div-address">
           <a href="./index.html" class="footer-webstudio"
@@ -447,9 +465,7 @@
                 >
               </li>
               <li class="footer__item">
-                <a
-                  class="footer-mail address"
-                  href="mailto:info@devstudio.com"
+                <a class="footer-mail address" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -523,7 +539,7 @@
         </div>
       </div>
     </footer>
-<!-- 
+    <!-- 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button" data-modal-close>
@@ -608,3 +624,19 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<!-- <picture>
+  <source
+    srcset="./images/team_1_desk.jpg 1x, ./images/team_1_desk_x2.jpg 2x"
+    media="(min-width: 1200px)"
+  />
+  <source
+    srcset="./images/team_1_tab.jpg 1x, ./images/team_1_tab_x2.jpg 2x"
+    media="(min-width: 768px)"
+  />
+  <source
+    srcset="./images/team_1_mob.jpg 1x, ./images/team_1_mob_x2.jpg 2x"
+    media="(min-width: 320px)"
+  />
+  <img src="./images/team_1_desk.jpg" alt="Игорь Демьяненко" width="270" />
+</picture> -->
