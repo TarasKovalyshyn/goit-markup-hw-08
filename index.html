@@ -29,7 +29,7 @@
           >Web<span class="header-logo">Studio</span></a
         >
 
-        <!-- <nav class="navigation">
+        <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link current">Студия</a>
@@ -44,10 +44,7 @@
         </nav>
         <ul class="contact">
           <li class="contact__item">
-            <a
-              class="contact__icon "
-              href="mailto:info@devstudio.com"
-            >
+            <a class="contact__icon" href="mailto:info@devstudio.com">
               <svg class="icon" width="16" height="12">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-envelope"
@@ -66,14 +63,24 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul> -->
-       
-      </div> 
-      <button type="button" class="menu-open__btn">O</button>
-      <div class="mob-menu">
+        </ul>
+        <button type="button" class="menu-open__btn">
+          <svg class="mob-icon__open" width="40" height="40">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden">
         <div class="container">
           <div class="mob-menu__top">
-          <button type="button" class="menu-close__btn">X</button>
+            <button type="button" class="menu-close__btn">
+              <svg class="mob-icon__close" width="40" height="40">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-close_40px"
+                ></use>
+              </svg>
+            </button>
             <ul class="mob-navigation__list">
               <li class="mob-navigation__item">
                 <a href="./index.html" class="mob-navigation__link current"
@@ -108,13 +115,13 @@
               <li class="mob-social__item">
                 <a href="" class="mob-social__link"> Instagram </a>
               </li>
-              <li class="mob-social__item ">
+              <li class="mob-social__item">
                 <a href="" class="mob-social__link"> Twitter </a>
               </li>
-              <li class="mob-social__item ">
+              <li class="mob-social__item">
                 <a href="" class="mob-social__link"> Facebook </a>
               </li>
-              <li class="mob-social__item ">
+              <li class="mob-social__item">
                 <a href="" class="mob-social__link"> Linkedin </a>
               </li>
             </ul>
@@ -123,7 +130,7 @@
       </div>
     </header>
 
-    <!-- <main>
+    <main>
       <section class="bussines">
         <div class="container">
           <h1 class="bussines-title">Эффективные решения для вашего бизнеса</h1>
@@ -135,9 +142,9 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
-    <!-- <section class="proposition">
+      <section class="proposition">
         <div class="container">
           <h2 class="visually-hidden">прихований заголовок</h2>
           <ul class="proposition__list">
@@ -171,9 +178,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- <section class="doing">
+      <section class="doing">
         <div class="container">
           <h2 class="doing__title">Чем мы занимаемся</h2>
           <ul class="doing__list">
@@ -237,9 +244,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
@@ -695,8 +702,8 @@
             </button>
           </form>
         </div>
-      </div> -->
-    <!-- </footer>
+      </div>
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -778,7 +785,8 @@
           </div>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

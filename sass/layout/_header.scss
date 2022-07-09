@@ -1,5 +1,6 @@
 .header-container {
   @include align-list;
+  justify-content: space-between;
 }
 
 .header {
@@ -16,7 +17,7 @@
   font-family: "Raleway";
   @include font(700, 26px, 31px, 00.03em);
   color: $main-second-color;
-  margin-right: 90px;
+  // margin-right: 90px;
 }
 
 .mob-menu {
@@ -24,39 +25,54 @@
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: rgb(105, 99, 99);
+  background-color: #fff;
   width: 100vw;
   height: 100vh;
   padding: 48px 0;
-  
-.container{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-height: 100%;
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+  }
 }
-}
-
-
-
-
-.menu-open__btn,
 .menu-close__btn {
- position: absolute;
- top: 10px;
- right: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: #fff;
+  color: $mail-color;
 }
 
-.menu-close__btn {
+.menu-open__btn {
+  @include tablet {
+    display: none;
+  }
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: #fff;
+  color: $mail-color;
 }
-.mob-menu__top {
-}
-.mob-navigation__list {
 
+.menu-close__btn:hover,
+.menu-close__btn:focus {
+  color: $main-second-color;
 }
+
+.mob-icon__close {
+  fill: currentColor;
+}
+
 .mob-navigation__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 25px;
+}
+.mob-navigation__link:hover,
+.mob-navigation__link:focus {
+  color: $main-second-color;
 }
 .mob-navigation__link {
   font-family: "Roboto";
@@ -67,15 +83,9 @@ height: 100%;
   letter-spacing: 0.02em;
   color: $main-color;
 }
-// .mob-menu__bottom {
-//   padding-bottom: 64px;
-// }
+
 .mob-contact__list {
-margin-bottom: 64px;
-
-
-}
-.mob-contact__item {
+  margin-bottom: 55px;
 }
 .mob-tel__link {
   display: block;
@@ -100,21 +110,27 @@ margin-bottom: 64px;
 
 .mob-social {
   display: flex;
+  align-items: baseline;
+  align-items: center;
+  gap: 10px;
+ 
+}
+.mob-social__item:nth-child(n + 2)::before {
+  content: "";
+  border: 1px solid rgba(90, 87, 87, 0.2);
+  transform: rotate(90deg);
+  margin-right: 5px;
+  align-items: baseline;
+  align-items: center;
 }
 
-.mob-social__item:not(:last-child) {
-  margin-right: 20px;
-}
 .mob-social__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: calc(22 / 18);
+  font-size: 14px;
+  line-height: calc(22 / 14);
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-.social__link-color {
-}
-.social__item--margin {
+  
 }

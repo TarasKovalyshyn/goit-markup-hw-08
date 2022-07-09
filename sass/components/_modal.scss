@@ -23,7 +23,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
-  padding: 40px;
+  padding: 20px;
+  width: 100%;
+
+  @include tablet {
+    padding: 30px;
+  }
 }
 .modal__button {
   position: absolute;
@@ -112,9 +117,12 @@
 }
 .label__checkbox {
   font-family: inherit;
-  @include font(400, 14px, 24px, 00.03em);
+  @include font(400, 12px, 14px, 00.03em);
   @include align-list;
   color: $mail-color;
+  @include desktop {
+    @include font(400, 14px, 24px, 00.03em);
+  }
 }
 .modal__checkbox {
   /* -webkit-appearance: none;
