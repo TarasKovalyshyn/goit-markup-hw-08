@@ -1,24 +1,120 @@
-
 .header-container {
   @include align-list;
-  }
-  
-  .header {
-    /* padding-top: 24px;
-    padding-bottom: 24px;*/
-    border-bottom: 1px solid #ececec;
-  }
-  
-  .header-logo {
-    color: $main-color;
-  }
-  
-  .header-webstudio {
-    font-family: "Raleway";
-    @include font (700, 26px, 31px, 00.03em);
-    color: $main-second-color;
-    margin-right: 90px;
-  }
+}
 
+.header {
+  /* padding-top: 24px;
+    padding-bottom: 24px;*/
+  border-bottom: 1px solid #ececec;
+}
+
+.header-logo {
+  color: $main-color;
+}
+
+.header-webstudio {
+  font-family: "Raleway";
+  @include font(700, 26px, 31px, 00.03em);
+  color: $main-second-color;
+  margin-right: 90px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(105, 99, 99);
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0;
   
-  
+.container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+
+}
+}
+
+
+
+
+.menu-open__btn,
+.menu-close__btn {
+ position: absolute;
+ top: 10px;
+ right: 15px;
+}
+
+.menu-close__btn {
+}
+.mob-menu__top {
+}
+.mob-navigation__list {
+
+}
+.mob-navigation__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-navigation__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  color: $main-color;
+}
+// .mob-menu__bottom {
+//   padding-bottom: 64px;
+// }
+.mob-contact__list {
+margin-bottom: 64px;
+
+
+}
+.mob-contact__item {
+}
+.mob-tel__link {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+.mob-mail__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-social {
+  display: flex;
+}
+
+.mob-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+.mob-social__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.social__link-color {
+}
+.social__item--margin {
+}
