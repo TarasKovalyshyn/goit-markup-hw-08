@@ -19,10 +19,11 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
-    
+    gap: 30px;
   }
   @include desktop{
     text-align: left;
+
   }
   // @media screen and (min-width: 1200px) {
   //   display: flex;
@@ -72,15 +73,14 @@
 //   margin-bottom: 8px;
 // }
 .footer-soc {
-  margin-top: 60px ;
   @include tablet{
     display: inline-block;
-    margin-left: 30px;
-    margin-bottom: 30px;
+  
+ 
   }
-  @include desktop {
-    margin-right: auto;
-  }
+  // @include desktop {
+  //   margin-right: auto;
+  // }
 }
 .footer-soc-text {
   font-family: inherit;
@@ -102,7 +102,12 @@
 }
 
 .footer-form{
- margin-top: 60px ;
+  @include tablet {
+ margin-top: 30px ;
+}
+@include desktop{
+  margin-top: 0;
+}
 }
 .footer-form-text {
   font-family: inherit;
